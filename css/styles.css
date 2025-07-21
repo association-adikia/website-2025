@@ -333,7 +333,7 @@ header .slogan strong {
 }
 
 .media .media-logos img[src*="lindependant"] {
-    transform: scale(1.2);
+    transform: scale(1.2) translateY(1px);
 }
 
 .media .media-logos img[src*="le_progres"] {
@@ -417,16 +417,16 @@ header .slogan strong {
 .history .timeline-item {
     padding: 10px 40px;
     position: relative;
-    width: 37.28%;
 }
 
 .history .timeline-item:nth-child(odd) {
     left: 0;
     text-align: right;
+    width: 37.25%;
 }
 
 .history .timeline-item:nth-child(even) {
-    left: 49.38%;
+    left: 49.39%;
     text-align: left;
 }
 

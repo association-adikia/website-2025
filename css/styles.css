@@ -170,7 +170,9 @@ header .slogan strong {
 
 .description hr {
     width: 50%;
-    border-color: var(--color-secondary);
+    height: 1px;
+    border: 0;
+    background-color: var(--color-secondary);
 }
 
 /* === SUPPORT === */
@@ -408,6 +410,11 @@ header .slogan strong {
     margin: 0 auto;
 }
 
+.history p {
+    /* text-align: justify; */
+    margin: 0 auto 60px auto;
+}
+
 .history .timeline::after {
     content: '';
     position: absolute;
@@ -510,6 +517,10 @@ header .slogan strong {
     color: var(--color-background);
 }
 
+.contact p {
+    color: var(--color-text);
+}
+
 .contact h2 {
     color: var(--color-white);
 }
@@ -523,6 +534,11 @@ header .slogan strong {
     margin-bottom: 25px;
 }
 
+.contact .form-group.form-info {
+    margin-bottom: 0;
+}
+
+
 .contact label {
     display: block;
     margin-bottom: 10px;
@@ -533,6 +549,7 @@ header .slogan strong {
 .contact .radio-group {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 15px;
 }
 
@@ -562,28 +579,44 @@ header .slogan strong {
 
 .contact .form-fields {
     display: flex;
-    /* Use flexbox */
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .contact .form-fields .form-group {
-    /* flex: 1 1 calc(50% - 20px); */
-    /* Flex properties for responsive columns */
     margin-bottom: 0;
-    /* Remove bottom margin as gap is used */
 }
 
-.contact .form-group.full-width {
-    flex-basis: 100%;
+.contact .form-fields .form-first-name {
+    width: 150px;
+}
+
+.contact .form-fields .form-last-name {
+    width: 150px;
+}
+
+.contact .form-fields .form-phone {
+    width: 120px;
+}
+
+.contact .form-fields .form-postal-code {
+    width: 120px;
+}
+
+.contact .form-fields .form-message {
+    width: 100%;
+}
+
+.contact .form-fields input {
+    width: 100%;
 }
 
 .contact input[type="text"],
 .contact input[type="email"],
 .contact input[type="tel"],
 .contact textarea {
-    width: 100%;
     padding: 15px;
     border: 1px solid var(--color-tertiary);
     border-radius: 5px;
@@ -593,6 +626,7 @@ header .slogan strong {
 }
 
 .contact textarea {
+    width: 100%;
     height: 150px;
     resize: vertical;
 }
@@ -602,7 +636,6 @@ header .slogan strong {
     margin: 20px 0 0 0;
     border: 0;
     background-color: var(--color-secondary);
-    /* border: 1px solid var(--color-white); */
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -642,7 +675,7 @@ footer .social-logos a:hover {
 }
 
 footer .footer-links {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 

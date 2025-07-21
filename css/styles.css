@@ -135,7 +135,7 @@ header .slogan strong {
 /* === HERO === */
 .hero {
     background: url('../img/hero.jpg') no-repeat center center/cover;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,6 +166,11 @@ header .slogan strong {
 .description p {
     font-size: 1.75em;
     color: var(--color-text);
+}
+
+.description hr {
+    width: 50%;
+    border-color: var(--color-secondary);
 }
 
 /* === SUPPORT === */
@@ -467,32 +472,41 @@ header .slogan strong {
 }
 
 .support-us {
-    background-color: var(--color-tertiary);
+    background: url('../img/support.jpg');
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-size: cover;
+    text-align: center;
+    color: var(--color-white);
 }
 
 .support-us h2 {
     color: var(--color-white);
+    margin: 40px auto 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .support-us p {
-    color: var(--color-text);
+    color: var(--color-white);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin: 180px auto 40px auto;
 }
 
 .support-us .btn {
-    margin: 10px 20px;
-    color: var(--color-secondary);
-    background-color: var(--color-white);
+    margin: 0 20px 40px 20px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
     min-width: 10%;
 }
 
 .support-us .btn:hover {
-    color: var(--color-white);
-    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    background-color: var(--color-white);
 }
 
 /* === CONTACT === */
 .contact {
-    background-color: var(--color-secondary) !important;
+    background-color: var(--color-tertiary) !important;
     color: var(--color-background);
 }
 
@@ -542,7 +556,7 @@ header .slogan strong {
 }
 
 .contact .radio-group input[type="radio"]:checked+label {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-secondary);
     color: var(--color-white);
 }
 
@@ -587,8 +601,8 @@ header .slogan strong {
     width: 100%;
     margin: 20px 0 0 0;
     border: 0;
-    background-color: var(--color-tertiary);
-    border: 1px solid var(--color-tertiary);
+    background-color: var(--color-secondary);
+    /* border: 1px solid var(--color-white); */
     cursor: pointer;
     transition: all 0.3s ease;
 }

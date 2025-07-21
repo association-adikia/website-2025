@@ -135,7 +135,7 @@ header .slogan strong {
 /* === HERO === */
 .hero {
     background: url('../img/hero.jpg') no-repeat center center/cover;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,9 +154,10 @@ header .slogan strong {
 
 .hero-text {
     text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.hero-text .emphasis {
+.hero-text strong {
     color: var(--color-primary);
     font-size: 1.25em;
 }
@@ -253,6 +254,7 @@ header .slogan strong {
 
 .media .media-logos img {
     width: 100%;
+    /* height: 100%; */
 }
 
 .media .media-logos a {
@@ -298,15 +300,11 @@ header .slogan strong {
 }
 
 .media .media-logos img[src*="rtl"] {
-    transform: scale(0.8);
-}
-
-.media .media-logos img[src*="20_minutes"] {
-    transform: scale(0.6);
+    transform: scale(0.7);
 }
 
 .media .media-logos img[src*="rmc"] {
-    transform: scale(1.1);
+    transform: scale(1.12);
 }
 
 .media .media-logos img[src*="le_monde"] {
@@ -318,8 +316,40 @@ header .slogan strong {
     transform: scale(1.2);
 }
 
+.media .media-logos img[src*="parole_de_mamans"] {
+    transform: scale(0.9);
+}
+
+.media .media-logos img[src*="la_croix"] {
+    transform: scale(1.1);
+}
+
 .media .media-logos img[src*="nice-matin"] {
     transform: scale(1.3);
+}
+
+.media .media-logos img[src*="midi_libre"] {
+    transform: scale(1.3) translateY(2px);
+}
+
+.media .media-logos img[src*="lindependant"] {
+    transform: scale(1.2);
+}
+
+.media .media-logos img[src*="le_progres"] {
+    transform: scale(1.15);
+}
+
+.media .media-logos img[src*="jsl"] {
+    transform: scale(1) translateY(2px);
+}
+
+.media .media-logos img[src*="lest_republicain"] {
+    transform: scale(0.75);
+}
+
+.media .media-logos img[src*="20_minutes"] {
+    transform: scale(0.5);
 }
 
 .media .media-logos img[src*="rue89"] {
@@ -327,7 +357,7 @@ header .slogan strong {
 }
 
 .media .media-logos img[src*="konbini"] {
-    transform: scale(0.8);
+    transform: scale(0.75);
 }
 
 .media .media-logos img[src*="aufeminin"] {

@@ -213,6 +213,8 @@ header .slogan strong {
     font-size: 4.5em;
     font-weight: var(--font-weight-bold);
     color: var(--color-white);
+    margin-left: 10px;
+    margin-top: 10px;
     /* margin-bottom: -20px; */
     line-height: 1em;
 }
@@ -538,7 +540,7 @@ header .slogan strong {
     margin: 0 20px 40px 20px;
     color: var(--color-white);
     background-color: var(--color-primary);
-    min-width: 10%;
+    width: 20%;
 }
 
 .support-us .btn:hover {
@@ -576,7 +578,6 @@ header .slogan strong {
 
 .contact label {
     display: block;
-    margin-bottom: 10px;
     font-weight: var(--font-weight-bold);
     color: var(--color-white);
 }
@@ -744,6 +745,16 @@ footer p {
 }
 
 /* === RESPONSIVE === */
+
+@media (max-width: 300px) {
+
+    h1,
+    h2 {
+        line-break: anywhere !important;
+    }
+}
+
+
 @media (max-width: 900px) {
     br {
         display: none;
@@ -762,7 +773,7 @@ footer p {
 
     h2 {
         font-size: 2.2em;
-        line-break: anywhere;
+        line-break: loose;
     }
 
     p {
@@ -831,11 +842,12 @@ footer p {
     }
 
     .support-us p {
-        margin: 50px auto 20px auto;
+        margin: 50px auto 40px auto;
     }
 
     .support-us .btn {
-        margin: 20px;
+        margin: 10px 20px;
+        width: 50%;
     }
 
     .contact .form-fields .form-group {

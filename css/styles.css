@@ -82,6 +82,10 @@ p {
     margin: 25px auto 25px auto;
 }
 
+label {
+    font-size: 1.4em;
+}
+
 .btn {
     display: inline-block;
     background-color: var(--color-primary);
@@ -90,9 +94,9 @@ p {
     border-radius: 5px;
     text-decoration: none;
     font-weight: var(--font-weight-bold);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     margin: 10px;
-    font-size: 1.1em;
+    font-size: 1.4em;
     text-transform: uppercase;
 }
 
@@ -383,7 +387,7 @@ header .slogan strong {
 .history .timeline-item {
     padding: 10px 40px;
     position: relative;
-    width: 50%;
+    width: 37.28%;
 }
 
 .history .timeline-item:nth-child(odd) {
@@ -392,7 +396,7 @@ header .slogan strong {
 }
 
 .history .timeline-item:nth-child(even) {
-    left: 50%;
+    left: 49.38%;
     text-align: left;
 }
 
@@ -432,11 +436,40 @@ header .slogan strong {
     text-align: center;
 }
 
+.support-us {
+    background-color: var(--color-tertiary);
+}
+
+.support-us h2 {
+    color: var(--color-white);
+}
+
+.support-us p {
+    color: var(--color-text);
+}
+
 .support-us .btn {
     margin: 10px 20px;
+    color: var(--color-secondary);
+    background-color: var(--color-white);
+    min-width: 10%;
+}
+
+.support-us .btn:hover {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
 }
 
 /* === CONTACT === */
+.contact {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-background);
+}
+
+.contact h2 {
+    color: var(--color-white);
+}
+
 .contact form {
     max-width: 900px;
     margin: 40px auto 0 auto;
@@ -450,7 +483,7 @@ header .slogan strong {
     display: block;
     margin-bottom: 10px;
     font-weight: var(--font-weight-bold);
-    color: var(--color-secondary);
+    color: var(--color-white);
 }
 
 .contact .radio-group {
@@ -469,12 +502,18 @@ header .slogan strong {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: var(--color-secondary);
+    background-color: var(--color-background);
+    font-weight: normal;
+}
+
+.contact .radio-group label:hover {
+    filter: brightness(0.92);
 }
 
 .contact .radio-group input[type="radio"]:checked+label {
-    background-color: var(--color-primary);
+    background-color: var(--color-tertiary);
     color: var(--color-white);
-    border-color: var(--color-primary);
 }
 
 .contact .form-fields {
@@ -486,7 +525,7 @@ header .slogan strong {
 }
 
 .contact .form-fields .form-group {
-    flex: 1 1 calc(50% - 20px);
+    /* flex: 1 1 calc(50% - 20px); */
     /* Flex properties for responsive columns */
     margin-bottom: 0;
     /* Remove bottom margin as gap is used */
@@ -516,7 +555,16 @@ header .slogan strong {
 
 .contact button[type="submit"] {
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
+    border: 0;
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-tertiary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+    filter: brightness(0.92);
 }
 
 .contact .form-fields.disabled {
@@ -526,10 +574,10 @@ header .slogan strong {
 
 /* === FOOTER === */
 footer {
-    background-color: var(--color-secondary);
+    background-color: var(--color-text);
     color: var(--color-white);
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 footer .social-logos {
@@ -541,7 +589,7 @@ footer .social-logos a {
     font-size: 28px;
     /* Font Awesome icon size */
     color: var(--color-white);
-    opacity: 0.8;
+    opacity: 0.75;
     transition: opacity 0.3s ease;
 }
 
@@ -550,8 +598,8 @@ footer .social-logos a:hover {
 }
 
 footer .footer-links {
-    margin-bottom: 20px;
     font-size: 1.1em;
+    margin-bottom: 20px;
 }
 
 footer .footer-links a {
@@ -620,7 +668,7 @@ footer p {
 
     .history .timeline-item:nth-child(odd) .timeline-dot,
     .history .timeline-item:nth-child(even) .timeline-dot {
-        left: 23px;
+        left: 18px;
     }
 
     .contact .form-fields .form-group {

@@ -754,6 +754,18 @@ footer p {
     }
 }
 
+@media (max-width: 500px) {
+
+    .media .media-logos {
+        gap: 0;
+    }
+
+    .media .media-logos a {
+        width: 50%;
+    }
+
+}
+
 
 @media (max-width: 900px) {
     br {
@@ -782,6 +794,7 @@ footer p {
 
     header .slogan {
         margin: 0;
+        font-size: 1.3em;
     }
 
     .hero {

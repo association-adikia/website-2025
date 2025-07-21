@@ -28,13 +28,17 @@
 body {
     font-family: var(--font-family);
     font-weight: var(--font-weight-regular);
-    line-height: 1.7;
+    line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-white);
     margin: 0;
     padding: 0;
     font-size: 16px;
     /* overflow-x: hidden; */
+}
+
+emph {
+    font-style: italic;
 }
 
 .container {
@@ -67,6 +71,7 @@ h3 {
 h2 {
     margin-top: 0;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 h2,
@@ -172,6 +177,7 @@ header .slogan strong {
 /* === DESCRIPTION === */
 .description p {
     font-size: 1.75em;
+    /* line-height: 1.5; */
     color: var(--color-text);
 }
 
@@ -764,6 +770,9 @@ footer p {
         width: 50%;
     }
 
+    footer .social-logos a {
+        margin: 0 10px;
+    }
 }
 
 

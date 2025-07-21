@@ -200,6 +200,7 @@ header .slogan strong {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    gap: 40px;
     margin-top: 40px;
 }
 
@@ -212,7 +213,8 @@ header .slogan strong {
     font-size: 4.5em;
     font-weight: var(--font-weight-bold);
     color: var(--color-white);
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
+    line-height: 1em;
 }
 
 .support .label {
@@ -220,6 +222,7 @@ header .slogan strong {
     color: var(--color-background);
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
+    margin-top: 20px;
     padding-top: 0;
 }
 
@@ -272,16 +275,27 @@ header .slogan strong {
     margin: 40px 0;
 }
 
-.media .media-logos img {
-    width: 100%;
-    /* height: 100%; */
-}
-
 .media .media-logos a {
     filter: grayscale(100%);
     width: 80%;
+    aspect-ratio: 1;
     margin: 0 auto;
     transition: all 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media .media-logos img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* height: 100%; */
 }
 
 .media .media-logos a:hover {
@@ -730,26 +744,41 @@ footer p {
 }
 
 /* === RESPONSIVE === */
+@media (max-width: 900px) {
+    br {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 16px;
     }
 
     h1 {
-        font-size: 2.8em;
+        font-size: max(6.5vw, 2em) !important;
+        line-break: loose;
     }
 
     h2 {
         font-size: 2.2em;
+        line-break: anywhere;
     }
 
     p {
         font-size: 1.2em;
     }
 
-    .hero-text h1 {
-        font-size: max(7vw, 2em);
-        line-break: loose;
+    header .slogan {
+        margin: 0;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .btn {
+        font-size: 1em;
     }
 
     header .container {
@@ -775,6 +804,7 @@ footer p {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
+        margin-left: 50px;
     }
 
     .history .timeline-item:nth-child(odd),
@@ -786,6 +816,26 @@ footer p {
     .history .timeline-item:nth-child(odd) .timeline-dot,
     .history .timeline-item:nth-child(even) .timeline-dot {
         left: 18px;
+    }
+
+    .history .timeline::after {
+        left: 80px;
+    }
+
+    .support-us {
+        background-position-y: 100%;
+    }
+
+    .support-us h2 {
+        margin: 20px auto 0 auto;
+    }
+
+    .support-us p {
+        margin: 50px auto 20px auto;
+    }
+
+    .support-us .btn {
+        margin: 20px;
     }
 
     .contact .form-fields .form-group {

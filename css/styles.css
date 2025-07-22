@@ -86,7 +86,9 @@ h3 {
     font-size: 2.2em;
 }
 
-p {
+p,
+ol,
+ul {
     font-size: 1.4em;
     text-align: center;
     max-width: 900px;
@@ -97,11 +99,12 @@ label {
     font-size: 1.4em;
 }
 
+
 .btn {
     display: inline-block;
     background-color: var(--color-primary);
     color: var(--color-white);
-    padding: 15px 35px;
+    padding: 15px 50px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: var(--font-weight-bold);
@@ -121,7 +124,7 @@ label {
 header {
     background-color: var(--color-white);
     padding: 20px 0;
-    border-bottom: 1px solid var(--color-background);
+    /* border-bottom: 1px solid var(--color-background); */
 }
 
 header .container {
@@ -712,6 +715,7 @@ header .slogan strong {
 
 .contact button[type="submit"] {
     width: 100%;
+    padding: 15px 50px;
     margin: 20px 0 0 0;
     border: 0;
     background-color: var(--color-secondary);
@@ -781,6 +785,51 @@ footer p {
     font-size: 1em;
     margin-bottom: 0;
 }
+
+
+
+/* === CONTENT PAGES === */
+
+section.charte h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+section.charte p,
+section.charte ol,
+section.charte ul {
+    text-align: justify;
+    margin: 20px auto;
+}
+
+section.charte ol,
+section.charte ul {
+    font-size: 1.4em;
+}
+
+section.charte ol li,
+section.charte ul li {
+    padding: 0 0 10px 30px;
+}
+
+section.charte h2 {
+    font-size: 2em;
+    margin: 40px auto 25px auto;
+}
+
+section.charte .btw-wrapper {
+    text-align: center;
+}
+
+section.charte .btn {
+    background-color: var(--color-secondary);
+}
+
+section.charte .btn:hover {
+    filter: brightness(110%);
+}
+
+
 
 /* === RESPONSIVE === */
 

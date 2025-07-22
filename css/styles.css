@@ -838,6 +838,11 @@ section.page p {
     font-size: 1.4em;
 }
 
+section.page p,
+section.page li {
+    line-height: 1.5;
+}
+
 section.page .btw-wrapper {
     text-align: center;
 }

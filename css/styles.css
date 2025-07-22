@@ -834,12 +834,17 @@ section.page h2 {
     margin: 40px auto 25px auto;
 }
 
+section.page p {
+    font-size: 1.4em;
+}
+
 section.page .btw-wrapper {
     text-align: center;
 }
 
 section.page .btn {
     background-color: var(--color-secondary);
+    font-size: 1.4em;
 }
 
 section.page .btn:hover {

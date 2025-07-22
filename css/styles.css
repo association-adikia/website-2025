@@ -146,7 +146,6 @@ header .slogan strong {
 /* === HERO === */
 .hero {
     background: url('../img/hero.jpg') no-repeat center center/cover;
-    min-height: 640px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,23 +154,36 @@ header .slogan strong {
     padding: 0;
 }
 
+.hero-text {
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 .hero-text h1 {
+    margin: 120px 20px 50px 20px;
     padding: 0 20px;
     font-size: 3.5em;
     font-weight: 400;
     line-height: 1.25;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
-}
-
-.hero-text {
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    align-self: center;
 }
 
 .hero-text strong {
     color: var(--color-primary);
     font-size: 1.25em;
+}
+
+.hero-text a {
+    align-self: center;
+    margin: 50px 20px 40px 20px;
 }
 
 /* === DESCRIPTION === */
@@ -808,6 +820,10 @@ footer p {
 
     .hero {
         min-height: 400px;
+    }
+
+    .hero-text {
+        min-height: 0;
     }
 
     .btn {

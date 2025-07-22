@@ -105,10 +105,12 @@ label {
     border-radius: 5px;
     text-decoration: none;
     font-weight: var(--font-weight-bold);
-    transition: background-color 0.3s ease, color 0.3s ease;
     margin: 10px;
+    text-align: center;
     font-size: 1.4em;
     text-transform: uppercase;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
@@ -280,11 +282,19 @@ header .slogan strong {
 }
 
 /* === UNDERSTANDING === */
+.understanding {
+    text-align: center;
+}
+
 .understanding h2 {
     color: var(--color-primary);
 }
 
 /* === MEDIA === */
+.media {
+    text-align: center;
+}
+
 .media .media-logos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -417,6 +427,14 @@ header .slogan strong {
     transform: scale(1.2);
 }
 
+.media .btn {
+    background-color: var(--color-secondary);
+}
+
+.media .btn:hover {
+    filter: brightness(110%);
+}
+
 /* === KONBINI === */
 .konbini {
     background-color: var(--color-primary);
@@ -524,12 +542,16 @@ header .slogan strong {
     font-size: 1.2em;
 }
 
-/* === UNDERSTANDING & SUPPORT-US === */
-.understanding,
-.support-us {
+/* === TESTIMONIES === */
+.testimonies {
     text-align: center;
 }
 
+.testimonies h2 {
+    color: var(--color-primary);
+}
+
+/* === SUPPORT-US === */
 .support-us {
     background: url('../img/support.jpg');
     background-repeat: no-repeat;

@@ -483,7 +483,7 @@ header .slogan strong {
 }
 
 .history a:hover {
-    filter: brightness(150%);
+    filter: brightness(110%);
 }
 
 
@@ -790,42 +790,59 @@ footer p {
 
 /* === CONTENT PAGES === */
 
-section.charte h1 {
+section.page h1 {
     font-size: 3em;
     text-transform: uppercase;
 }
 
-section.charte p,
-section.charte ol,
-section.charte ul {
+section.page p,
+section.page ol,
+section.page ul {
     text-align: justify;
     margin: 20px auto;
 }
 
-section.charte ol,
-section.charte ul {
+section.page a,
+section.page a:visited {
+    color: var(--color-primary);
+}
+
+section.page a:hover {
+    filter: brightness(110%);
+}
+
+section.page a.btn {
+    color: var(--color-white);
+}
+
+section.page ol,
+section.page ul {
     font-size: 1.4em;
 }
 
-section.charte ol li,
-section.charte ul li {
+section.page ol li {
     padding: 0 0 10px 30px;
 }
 
-section.charte h2 {
+section.page ul li {
+    padding: 0 0 5px 30px;
+}
+
+section.page h2 {
     font-size: 2em;
+    max-width: 900px;
     margin: 40px auto 25px auto;
 }
 
-section.charte .btw-wrapper {
+section.page .btw-wrapper {
     text-align: center;
 }
 
-section.charte .btn {
+section.page .btn {
     background-color: var(--color-secondary);
 }
 
-section.charte .btn:hover {
+section.page .btn:hover {
     filter: brightness(110%);
 }
 

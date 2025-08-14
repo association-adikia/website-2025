@@ -595,6 +595,16 @@ header .slogan strong {
     color: var(--color-background);
 }
 
+.contact summary {
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 50px;
+    border: 0;
+    font-size: 1.4em;
+    color: var(--color-text);
+    /* background-color: var(--color-secondary); */
+}
+
 .contact p {
     color: var(--color-text);
 }

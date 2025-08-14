@@ -224,53 +224,56 @@
             <p>
                 ADIKIA ne fournit <strong>aucun conseil juridique ou médical</strong>. Consultez des professionnels qualifiés.
             </p>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label>Je suis :</label>
-                    <div class="radio-group">
-                        <input type="radio" id="parent" name="iam" value="parent" required><label for="parent">parent / proche</label>
-                        <!-- <input type="radio" id="proche-parent" name="iam" value="proche-parent"><label for="proche-parent">proche parent</label> -->
-                        <input type="radio" id="nounou" name="iam" value="nounou"><label for="nounou">nounou / proche</label>
-                        <!-- <input type="radio" id="proche-nounou" name="iam" value="proche-nounou"><label for="proche-nounou">proche nounou</label> -->
-                        <input type="radio" id="journaliste" name="iam" value="journaliste"><label for="journaliste">journaliste</label>
-                        <input type="radio" id="autre-iam" name="iam" value="autre"><label for="autre-iam">autre</label>
+            <details>
+                <summary>Remplir le formulaire</summary>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label>Je suis :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="parent" name="iam" value="parent" required><label for="parent">parent / proche</label>
+                            <!-- <input type="radio" id="proche-parent" name="iam" value="proche-parent"><label for="proche-parent">proche parent</label> -->
+                            <input type="radio" id="nounou" name="iam" value="nounou"><label for="nounou">nounou / proche</label>
+                            <!-- <input type="radio" id="proche-nounou" name="iam" value="proche-nounou"><label for="proche-nounou">proche nounou</label> -->
+                            <input type="radio" id="journaliste" name="iam" value="journaliste"><label for="journaliste">journaliste</label>
+                            <input type="radio" id="autre-iam" name="iam" value="autre"><label for="autre-iam">autre</label>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label>Concerné par :</label>
-                    <div class="radio-group">
-                        <input type="radio" id="bebe-secoue" name="concern" value="bebe-secoue" required><label for="bebe-secoue">bébé secoué</label>
-                        <input type="radio" id="fractures" name="concern" value="fractures"><label for="fractures">fractures</label>
-                        <input type="radio" id="maltraitance" name="concern" value="maltraitance"><label for="maltraitance">maltraitance</label>
-                        <input type="radio" id="informations" name="concern" value="informations"><label for="informations">informations</label>
-                        <input type="radio" id="autre-placement" name="concern" value="autre-placement"><label for="autre-placement">autre</label>
+                    <div class="form-group">
+                        <label>Concerné par :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="bebe-secoue" name="concern" value="bebe-secoue" required><label for="bebe-secoue">bébé secoué</label>
+                            <input type="radio" id="fractures" name="concern" value="fractures"><label for="fractures">fractures</label>
+                            <input type="radio" id="maltraitance" name="concern" value="maltraitance"><label for="maltraitance">maltraitance</label>
+                            <input type="radio" id="informations" name="concern" value="informations"><label for="informations">informations</label>
+                            <input type="radio" id="autre-placement" name="concern" value="autre-placement"><label for="autre-placement">autre</label>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group form-info">
-                    <label>Mes informations :</label>
-                </div>
-                <div class="form-fields">
-                    <div class="form-group form-first-name">
-                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                    <div class="form-group form-info">
+                        <label>Mes informations :</label>
                     </div>
-                    <div class="form-group form-last-name">
-                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    <div class="form-fields">
+                        <div class="form-group form-first-name">
+                            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                        </div>
+                        <div class="form-group form-last-name">
+                            <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                        </div>
+                        <div class="form-group form-email">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group form-phone">
+                            <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
+                        </div>
+                        <div class="form-group form-postal-code">
+                            <input type="text" id="code-postal" name="code-postal" placeholder="Code postal" inputmode="numeric" required>
+                        </div>
+                        <div class="form-group form-message">
+                            <textarea id="message" name="message" placeholder="Décrivez votre situation avec précision. Nous y répondrons dès que possible."></textarea>
+                        </div>
                     </div>
-                    <div class="form-group form-email">
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group form-phone">
-                        <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
-                    </div>
-                    <div class="form-group form-postal-code">
-                        <input type="text" id="code-postal" name="code-postal" placeholder="Code postal" inputmode="numeric" required>
-                    </div>
-                    <div class="form-group form-message">
-                        <textarea id="message" name="message" placeholder="Décrivez votre situation avec précision. Nous y répondrons dès que possible."></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="btn">Envoyer</button>
-            </form>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </details>
         </div>
     </section>
 

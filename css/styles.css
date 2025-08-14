@@ -52,7 +52,7 @@ section {
 }
 
 section:nth-child(odd) {
-    background-color: var(--color-background);
+    /* background-color: var(--color-background); */
 }
 
 a {
@@ -252,6 +252,7 @@ header .slogan strong {
 /* === NETWORK === */
 .network {
     background-color: var(--color-tertiary) !important;
+    display: none;
 }
 
 .network h2 {
@@ -287,6 +288,7 @@ header .slogan strong {
 /* === UNDERSTANDING === */
 .understanding {
     text-align: center;
+    background-color: var(--color-background);
 }
 
 .understanding h2 {
@@ -295,6 +297,7 @@ header .slogan strong {
 
 /* === MEDIA === */
 .media {
+    background-color: var(--color-background);
     text-align: center;
 }
 
@@ -548,6 +551,7 @@ header .slogan strong {
 /* === TESTIMONIES === */
 .testimonies {
     text-align: center;
+    display: none;
 }
 
 .testimonies h2 {
@@ -595,7 +599,7 @@ header .slogan strong {
     color: var(--color-background);
 }
 
-.contact summary {
+summary {
     cursor: pointer;
     text-align: center;
     padding: 15px 50px;
